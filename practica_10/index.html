@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practica 8</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="dating_web_site.js" type="text/javascript"></script>
+</head>
+<body>
+    <form >
+        <fieldset>
+        <legend>Tu careto   :p</legend>
+            <label>Foto:</label>
+            <input type="file" name="archivo" size="20" required/> 
+            <br>
+            <label>Previsualizacion de imagen: </label>
+            <br>
+            <img id="preview" src="#" alt="your image" />
+            
+            <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Datos generales</legend>
+            <label>Nombre:</label>
+            <input name="nombre" type="text" placeholder="pepe" required/>
+            <br>
+            <label>Genero:</label>
+            <input name="genero" type="radio" required/>Hombre
+            <input name="genero" type="radio" required/>Mujer
+            <br>
+            <label>Edad:</label>
+            <input name="edad" type="text" placeholder="99"/>
+            <br>
+            <label>Fecha de nacimiento:</label>
+            <input name="fecha_nac" type="date"/>
+            <br>
+            <label>Color favorito:</label>
+            <input name="color" type="color"/>
+            <br>
+            <label>Pais:</label>
+            <select>
+                <option value="sp">Espanya</option>
+                <option value="ca">Catalunya</option>
+                <option value="pv">Pais vasco</option>
+                <option value="cn">Canarias</option>
+            </select>
+            <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Otras caracteristicas</legend>
+            <label>Altura:</label>
+                <label id="delante">Bajo</label>
+                    <input name="edad" type="range" min="18" max="99" step="1" value="18"/>
+                <label id="detras">Alto</label>
+            <br>
+            <label>Salario:</label>
+                <label id="delante">Pobre</label>
+                    <input name="salario" type="range" min="700" max="5000" value="900">
+                <label id="detras">Rico</label>
+            <br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Informacion de contacto</legend>
+            <label>Email:</label>
+            <input name="email" type="email" required/>
+            <br>
+            <label>Movil:</label>
+            <input name="movil" type="tel">
+            <br>                   
+            <label>Direccion:</label>
+            <input name="direccion" type="text">
+            <br>
+            <label>Metodo de contacto:</label>
+            <input name="contact_email" type="checkbox">Email
+            <input name="contact_whatsapp" type="checkbox">Whatsapp
+            <input name="contact_skype" type="checkbox">Skype
+        </fieldset>
+    </form>
+    
+    <input name="enviar" type="submit" value="Enviar">
+</body>   
+    
+</html>
