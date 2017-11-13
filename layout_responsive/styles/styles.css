@@ -1,0 +1,56 @@
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+
+h3{
+    float: right;
+    border-style: solid;    
+    margin-top: 16px;
+    padding: 12px;  
+    
+}
+
+#titulo1 {
+    background-color: rgb(213,152,152); 
+}
+#titulo2 {
+    background-color: #C24644; 
+}
+#titulo3 {
+    background-color: #E5D29B; 
+}
+
+p{
+    text-align: center;
+    padding-top: 50px;   
+    border-style: solid;
+    background-color: grey;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;  
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:768px) {
+    .column {
+        width: 100%;
+    }
+}
+
