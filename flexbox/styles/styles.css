@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    margin:auto;
+    
+    
+}
+.flex-container>div {
+    background-color: grey;
+    margin: 10px;
+    padding:20px;
+    font-size: 20px;
+    border-style: solid;
+    
+}
+
+.flexend {
+    align-items: flex-end;
+    float: right;
+    margin-right: -23px;
+    border-style: solid;
+    margin-top: -23px;
+    padding: 15px;  
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.flex-container>div>p{
+    
+    padding-top: 50px;   
+    background-color: grey;
+}
+
+#titulo1{
+    background-color: rgb(213,152,152); 
+}
+#titulo2 {
+    background-color: #C24644; 
+}
+#titulo3 {
+    background-color: #E5D29B; 
+}
+
+.colum1, 
+.colum2, 
+.colum3 {width: 100%;}   
+
+@media (max-width: 767px) {
+    
+    .colum1,
+    .colum2,
+    .colum3     {width: 80%;}
+    .flex-container {
+        flex-flow: row wrap;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .colum1,
+    .colum2     {width: 40%;}
+    .colum3     {width: 83%;}
+    .flex-container {
+        flex-flow: row wrap;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:992px) {
+    .colum1,
+    .colum2,     
+    .colum3     {width: 30%;}
+    .flex-container {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
